@@ -63,8 +63,9 @@ def extract_words_from_directory(directory_path, password):
                                     if cleaned_word:
                                         # Add word to dictionary with page number
                                         if cleaned_word in word_pages:
-                                            if page_num not in word_pages[cleaned_word]:
-                                                word_pages[cleaned_word].append(f"{filename}:Page {page_num}")
+                                            entry = f"{filename}:Page {page_num}"
+                                            if entry not in word_pages[cleaned_word]:
+                                                word_pages[cleaned_word].append(entry)
                                         else:
                                             word_pages[cleaned_word] = [f"{filename}:Page {page_num}"]
                 
@@ -85,5 +86,5 @@ else:
     word_pages = extract_words_from_directory(sys.argv[1], password)
     # Print the dictionary
     for word, pages in word_pages.items():
-        if not word in relevant_words:
+        if word in relevant_words:
             print(f"{word}: {pages}")
