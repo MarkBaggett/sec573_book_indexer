@@ -1,7 +1,7 @@
 # sec573_book_indexer
-This python scripts builds indexes for SEC573 course material in preperation for a GIAC exam. This is a project maintained by all SEC573 alumni.  Contribute and make it better!
+This python scripts builds indexes for SEC573 course material in preparation for a GIAC exam. This is a project maintained by all SEC573 alumni.  Contribute and make it better!
 
-## WARNING: You are better off building your index manually. Doing so forces you to read the books which is MORE important than having an index. This should only supliment your manually built index, not replace it.
+## WARNING: You are better off building your index manually. Doing so forces you to read the books which is MORE important than having an index. This should only supplement your manually built index, not replace it.
 
 ## WARNING: Do no share Intellectual property such as PDFs and other copyright protected material.
 
